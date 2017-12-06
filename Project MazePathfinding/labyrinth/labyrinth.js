@@ -72,9 +72,6 @@ function verifKeyCode(val) {
     else if (val == "2"){
       command.switchState('astarComplete');
     }
-    else if (val == "r"){
-      command.switchState('reset');
-    }
     else if(val == " ")
       command.switchState('default');
     
