@@ -11,6 +11,10 @@ command.prototype = {
     _astar : function(){
       state = stateAstar;       
     },
+    _reset : function(){
+      state = stateDefault;
+      setup();
+    },
     _astarComplete : function(){
       state = stateCompleteAStar;
     },

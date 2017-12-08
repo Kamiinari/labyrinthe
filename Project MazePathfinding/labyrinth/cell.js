@@ -38,7 +38,7 @@ function Cell(i, j) {
     var x = this.i*mazeDimension;
     var y = this.j*mazeDimension;
     noStroke();
-    fill(0, 0, 255, 100);
+    fill(0, 0, 150, 100);
     rect(x, y, mazeDimension, mazeDimension);
 
   }
@@ -94,7 +94,7 @@ function Cell(i, j) {
 
     if (this.visited) {
       noStroke();
-      fill(255, 0, 255, 100);
+      fill(250, 0, 0, 100);
       rect(x, y, mazeDimension, mazeDimension);
     }
   }

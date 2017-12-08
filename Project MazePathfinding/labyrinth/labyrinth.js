@@ -8,7 +8,7 @@ var allNodePath;
 var current;
 var startNode;
 var endNode;
-var command;
+var command = new command;
 
 
 function setup() {
@@ -20,7 +20,6 @@ function setup() {
   stack = [];
   pathFinder = [];
   allNodePath = [];
-  command  = new command;
   for (var   j = 0; j < rows; j++) {
     for (var i = 0; i < cols; i++) {
       var cell = new Cell(i, j);
@@ -71,6 +70,9 @@ function verifKeyCode(val) {
     }
     else if (val == "2"){
       command.switchState('astarComplete');
+    }
+    else if(val == "r"){
+      command.switchState('reset');
     }
     else if(val == " ")
       command.switchState('default');
